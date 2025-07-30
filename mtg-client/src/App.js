@@ -1,5 +1,5 @@
-import CardSearch from "./components/CardSearch";
 import React,{Component} from 'react';
+import CardSearch from "./components/CardSearch";
 import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login'
@@ -41,20 +41,13 @@ class App extends Component {
       return null;
     }
 
-  return (
-      <div className="App" >
-        <h1 className="Text">LOGIN</h1>
-      
-        <Login />
-        <p></p>
-        <div>
-
-        <img className="frontImage" src={this.state.randomCard.image_uris.png}/>
-        </div>
-
-      </div>
-    )
-  }
+return (
+    <div>
+      <h1>Welcome to My MTG Site</h1>
+      <CardSearch />
+      <p>Explore and search for your favorite cards!</p>
+    </div>
+  );
 }
 
 export default App;
