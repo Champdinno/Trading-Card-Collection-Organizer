@@ -1,9 +1,8 @@
+import CardSearch from "./components/CardSearch";
 import React,{Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login'
-import CardSearch from "./components/CardSearch";
-
 
 class App extends Component {
   constructor() {
