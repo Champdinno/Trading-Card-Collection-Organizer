@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function CardSearch() {
+function CardSearch() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -58,3 +58,5 @@ export default function CardSearch() {
     </div>
   );
 }
+
+export default CardSearch; // ✅ Make sure this line exists
